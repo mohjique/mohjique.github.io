@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — Matthew Oh</title>
+<meta name="description" content="Projects, side-builds, and speaking engagements from Matthew Oh." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Matthew Oh</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a class="icon-link" href="https://github.com/mohjique" target="_blank" rel="noopener">GitHub</a>
+      <a class="icon-link" href="https://www.linkedin.com/in/matthewohjk/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap" style="padding-bottom: 8px;">
+  <h1>Projects</h1>
+  <p class="lede">
+    Small tools built to fix real annoyances, a homebrew robotics side-build, and a few places
+    I've shown up on stage or in print.
+  </p>
+</header>
+
+<section class="wrap">
+  <p class="section-label">Tools</p>
+  <h2>Things I built and shipped</h2>
+
+  <div class="project-card">
+    <div class="project-head">
+      <h3>Deal Intelligence Tracker</h3>
+      <span class="links"><a href="https://github.com/mohjique/Gmail-Newsletter-Deal-Intelligence-Tracker" target="_blank" rel="noopener">View on GitHub &rarr;</a></span>
+    </div>
+    <p>
+      A Gmail automation (Google Apps Script) that reads VC and startup-finance newsletters
+      straight out of my inbox, sends them to Gemini for structured extraction, and logs every
+      funding round, M&amp;A deal, IPO, and leadership move into a Google Sheet &mdash;
+      automatically, every morning, deduplicated by hash.
+    </p>
+    <p>My personal setup has processed 1,000+ business events since April 2026, running on the free tier.</p>
+    <div class="tags">
+      <span class="tag">Google Apps Script</span>
+      <span class="tag">Gemini API</span>
+      <span class="tag">Deal Flow Automation</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-head">
+      <h3>Quizlet2CSV</h3>
+      <span class="links"><a href="https://github.com/mohjique/QUIZLET2CSV" target="_blank" rel="noopener">View on GitHub &rarr;</a></span>
+    </div>
+    <p>
+      A drag-and-drop macOS/Windows app that turns a saved Quizlet flashcard page into a clean
+      term/definition CSV &mdash; no scraping, no server, nothing leaves your machine. The point
+      isn't the CSV itself; it's getting flashcards into a format an AI can actually study
+      with: fact-checking cards, generating practice exams, and sequencing a study plan.
+    </p>
+    <p>Built for non-technical classmates in humanities/bio/pre-med tracks, with a README written for people who've never opened a terminal.</p>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Tkinter</span>
+      <span class="tag">AppleScript</span>
+      <span class="tag stat">2 stars</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <p class="section-label">Hardware side-build</p>
+  <h2>Dasher facial animations</h2>
+  <p class="dasher-intro">
+    A living-room hackathon with my roommate Aman Sharma (Texas A&amp;M Cyclotron Institute):
+    an ESP32 wired to a microphone and environmental sensors, driving an LCD "face" that
+    changes expression with ambient conditions &mdash; a nod to dConstruct's <strong>dASH-er</strong>
+    robot. Aman wrote the sensor firmware on the EPICS framework (the same control-systems
+    toolkit CERN uses); I used Claude to configure the LCD module and get the expressions
+    talking to the sensor data, learning ESPHome and YAML/C++ along the way. Below are a few of
+    the faces it makes.
+  </p>
+  <div class="dasher-grid">
+    <div class="dasher-tile">
+      <img src="assets/img/dasher/sleepy.gif" alt="Dasher LCD face: sleepy expression" loading="lazy" />
+      <div class="label">Idle / Sleepy</div>
+    </div>
+    <div class="dasher-tile">
+      <img src="assets/img/dasher/derp.gif" alt="Dasher LCD face: derp expression" loading="lazy" />
+      <div class="label">Derp</div>
+    </div>
+    <div class="dasher-tile">
+      <img src="assets/img/dasher/cat-face.gif" alt="Dasher LCD face: cat face expression" loading="lazy" />
+      <div class="label">Cat Face</div>
+    </div>
+    <div class="dasher-tile">
+      <img src="assets/img/dasher/pointing.gif" alt="Dasher LCD face: pointing animation" loading="lazy" />
+      <div class="label">Pointing</div>
+    </div>
+    <div class="dasher-tile">
+      <img src="assets/img/dasher/shy-fingers.gif" alt="Dasher LCD face: shy fingers expression" loading="lazy" />
+      <div class="label">Shy Fingers</div>
+    </div>
+    <div class="dasher-tile">
+      <img src="assets/img/dasher/ragemeter.gif" alt="Dasher LCD face: rage meter animation" loading="lazy" />
+      <div class="label">Rage Meter</div>
+    </div>
+    <div class="dasher-tile">
+      <img src="assets/img/dasher/dollar-signs.gif" alt="Dasher LCD face: dollar signs animation" loading="lazy" />
+      <div class="label">Dollar Signs</div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <p class="section-label">Featured in</p>
+  <h2>Talks, panels &amp; press</h2>
+
+  <div class="feature-item">
+    <div class="feature-date">2023</div>
+    <div class="feature-body">
+      <h3>World MUN Day Summit 2023 — Closing Ceremony: "What Can Youth Do?"</h3>
+      <p>Panelist, hosted by MUNers Across Borders.</p>
+      <span class="src"><a href="https://www.linkedin.com/in/matthewohjk/" target="_blank" rel="noopener">via LinkedIn &rarr;</a></span>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <div class="feature-date">2022</div>
+    <div class="feature-body">
+      <h3>ECOSOC Youth Forum — Permanent Mission of Jamaica to the UN</h3>
+      <p>Guest speaker representing MUN Impact, presenting on the org's work democratizing the Model UN experience.</p>
+      <span class="src"><a href="https://www.linkedin.com/in/matthewohjk/" target="_blank" rel="noopener">via LinkedIn &rarr;</a></span>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <div class="feature-date">2022</div>
+    <div class="feature-body">
+      <h3>"More than a Conference: Democratizing the MUN Experience"</h3>
+      <p>Produced by MUN Impact.</p>
+      <span class="src"><a href="https://www.linkedin.com/in/matthewohjk/" target="_blank" rel="noopener">via LinkedIn &rarr;</a></span>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <div class="feature-date">2021</div>
+    <div class="feature-body">
+      <h3>"How Model UN Can Support Agenda 2030" — MUN Impact E3 Summit</h3>
+      <p>Open-forum panelist alongside Jaideep Singh Soodan, Mohammed Mostafa, and Defne Yaman.</p>
+      <span class="src"><a href="https://www.linkedin.com/in/matthewohjk/" target="_blank" rel="noopener">via LinkedIn &rarr;</a></span>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <div class="feature-date">&mdash;</div>
+    <div class="feature-body">
+      <h3>Sree Narayana College — DBT Star Webinar</h3>
+      <p>Keynote speaker.</p>
+      <span class="src"><a href="https://www.linkedin.com/in/matthewohjk/" target="_blank" rel="noopener">via LinkedIn &rarr;</a></span>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>Matthew Oh &middot; Austin, TX &middot;
+    <a href="https://github.com/mohjique" target="_blank" rel="noopener">GitHub</a> &middot;
+    <a href="https://www.linkedin.com/in/matthewohjk/" target="_blank" rel="noopener">LinkedIn</a>
+  </p>
+</footer>
+
+</body>
+</html>

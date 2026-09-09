@@ -260,6 +260,14 @@ h2 {
 .project-card p { color: var(--text-muted); margin: 0 0 12px; }
 .project-card p:last-of-type { margin-bottom: 0; }
 
+.project-shot {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 14px 0 4px;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -331,7 +339,7 @@ h2 {
 }
 
 /* ---------- Dasher gallery ---------- */
-.dasher-intro { color: var(--text-muted); margin-bottom: 20px; max-width: 68ch; }
+.dasher-intro { color: var(--text-muted); margin-bottom: 20px; }
 
 .dasher-grid {
   display: flex;

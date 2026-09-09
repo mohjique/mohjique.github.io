@@ -334,12 +334,14 @@ h2 {
 .dasher-intro { color: var(--text-muted); margin-bottom: 20px; max-width: 68ch; }
 
 .dasher-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
 .dasher-tile {
+  flex: 0 1 calc(25% - 9px);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -410,7 +412,7 @@ footer a:hover { color: var(--accent-bright); }
   .hero { padding: 48px 0 32px; }
   .hero h1 { font-size: 1.7rem; }
   .grid { grid-template-columns: 1fr; }
-  .dasher-grid { grid-template-columns: repeat(2, 1fr); }
+  .dasher-tile { flex-basis: calc(50% - 6px); }
   .hero-top { gap: 16px; }
   .avatar { width: 60px; height: 60px; }
   .embed-wrap iframe { height: 280px; }

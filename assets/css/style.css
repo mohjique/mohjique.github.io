@@ -265,7 +265,7 @@ h2 {
   width: 100%;
   max-width: 340px;
   height: auto;
-  margin: 14px 0 4px;
+  margin: 14px auto 4px;
 }
 
 .tags {

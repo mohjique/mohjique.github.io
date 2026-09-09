@@ -357,6 +357,22 @@ h2 {
   text-align: center;
 }
 
+.dasher-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.dasher-photos img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background: var(--bg-alt);
+}
+
 /* ---------- Featured-in list ---------- */
 .feature-item {
   display: flex;

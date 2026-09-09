@@ -282,6 +282,54 @@ h2 {
   font-weight: 600;
 }
 
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tag svg { fill: currentColor; }
+
+.tag-telegram { color: #229ed9; }
+
+/* ---------- Live embeds (projects.html) ---------- */
+.embed-wrap {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 16px 0 8px;
+  background: var(--bg-alt);
+}
+
+.embed-wrap iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  display: block;
+}
+
+.embed-caption {
+  font-size: 0.8rem;
+  margin: 0 0 18px;
+}
+
+.embed-caption a { font-weight: 600; }
+
+.telegram-cta {
+  background: #229ed9;
+  border-color: #229ed9;
+  color: #fdfdfa;
+  margin-bottom: 18px;
+}
+
+.telegram-cta svg { fill: currentColor; }
+
+.telegram-cta:hover {
+  background: #1c86ba;
+  border-color: #1c86ba;
+  color: #fdfdfa;
+}
+
 /* ---------- Dasher gallery ---------- */
 .dasher-intro { color: var(--text-muted); margin-bottom: 20px; max-width: 68ch; }
 
@@ -349,4 +397,5 @@ footer a:hover { color: var(--accent-bright); }
   .dasher-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-top { gap: 16px; }
   .avatar { width: 60px; height: 60px; }
+  .embed-wrap iframe { height: 280px; }
 }

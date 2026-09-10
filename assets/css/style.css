@@ -336,7 +336,7 @@ h2 {
 }
 
 .embed-caption {
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   margin: 0 0 12px;
 }
 
@@ -345,6 +345,18 @@ h2 {
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 18px;
+}
+
+.sheets-cta {
+  background: #0f9d58;
+  border-color: #0f9d58;
+  color: #fdfdfa;
+}
+
+.sheets-cta:hover {
+  background: #0b8043;
+  border-color: #0b8043;
+  color: #fdfdfa;
 }
 
 .telegram-cta {

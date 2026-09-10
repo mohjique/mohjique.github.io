@@ -105,6 +105,11 @@ img { max-width: 100%; display: block; }
   gap: 6px;
 }
 
+.nav-links .icon-link svg {
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   padding-top: 72px;
@@ -473,6 +478,10 @@ footer a:hover { color: var(--accent-bright); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
+  .site-nav .wrap { padding-left: 16px; padding-right: 16px; }
+  .brand { font-size: 0.95rem; }
+  .nav-links { gap: 14px; font-size: 0.82rem; }
+  .icon-link-text { display: none; }
   .hero { padding-top: 48px; padding-bottom: 32px; }
   .hero h1 { font-size: 1.7rem; }
   .grid { grid-template-columns: 1fr; }

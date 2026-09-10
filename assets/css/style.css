@@ -116,6 +116,15 @@ img { max-width: 100%; display: block; }
   padding-bottom: 48px;
 }
 
+.hello-gif {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: 0 auto 28px;
+  border-radius: 10px;
+}
+
 .hero-top {
   display: flex;
   align-items: center;

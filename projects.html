@@ -112,6 +112,33 @@
       <span class="tag">AppleScript</span>
     </div>
   </div>
+
+  <div class="project-card">
+    <div class="project-head">
+      <h3>EPICS Desk Robot</h3>
+      <span class="links"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7502213875195510785/" target="_blank" rel="noopener">View post on LinkedIn &rarr;</a></span>
+    </div>
+    <p>
+      A weekend build with my roommate Aman Sharma (Texas A&amp;M Cyclotron Institute): an ESP32
+      wired to a microphone and environmental sensors, driving an LCD face that reads out
+      temperature, humidity, and response time live &mdash; and dramatically "dies" the moment
+      the room hits 90&deg;F. Aman wrote the sensor firmware on EPICS, the same control-systems
+      framework CERN uses; I used Claude to configure the LCD module and wire the facial states
+      to live sensor data, picking up ESPHome and YAML/C++ along the way.
+    </p>
+    <p>Next up: multiple wireless nodes reporting into our homelab and eventually driving home-automation actuators off live sensor data &mdash; pending an actual 3D printer instead of Lego Technic for the enclosure.</p>
+    <div class="project-photos">
+      <img src="assets/img/epics/photo-1.jpg" alt="EPICS desk robot LCD face showing temperature and humidity" loading="lazy" />
+      <img src="assets/img/epics/photo-2.jpg" alt="EPICS desk robot wired up on a breadboard next to a cactus" loading="lazy" />
+    </div>
+    <video class="project-video" src="assets/img/epics/demo.mp4" controls preload="metadata" playsinline></video>
+    <div class="tags">
+      <span class="tag">ESP32</span>
+      <span class="tag">EPICS</span>
+      <span class="tag">ESPHome</span>
+      <span class="tag">C++ / YAML</span>
+    </div>
+  </div>
 </section>
 
 <section class="wrap">

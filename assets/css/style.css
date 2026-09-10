@@ -283,6 +283,32 @@ h2 {
   margin: 14px auto 4px;
 }
 
+.project-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 14px 0 4px;
+}
+
+.project-photos img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.project-video {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 14px auto 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background: var(--bg-alt);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

@@ -450,6 +450,36 @@ footer {
 footer a { color: var(--text-muted); font-weight: 600; }
 footer a:hover { color: var(--accent-bright); }
 
+/* ---------- Dasher buddy (wandering background sprite) ---------- */
+.dasher-buddy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 56px;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform;
+  transition: transform 4s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.dasher-buddy-sprite {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: dasher-pulse 2.6s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes dasher-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dasher-buddy { transition: none; }
+  .dasher-buddy-sprite { animation: none; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   .hero { padding: 48px 0 32px; }
@@ -459,4 +489,5 @@ footer a:hover { color: var(--accent-bright); }
   .hero-top { gap: 16px; }
   .avatar { width: 60px; height: 60px; }
   .embed-wrap iframe { height: 280px; }
+  .dasher-buddy { display: none; }
 }

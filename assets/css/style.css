@@ -489,5 +489,5 @@ footer a:hover { color: var(--accent-bright); }
   .hero-top { gap: 16px; }
   .avatar { width: 60px; height: 60px; }
   .embed-wrap iframe { height: 280px; }
-  .dasher-buddy { display: none; }
+  #dasher-buddy { display: none; }
 }

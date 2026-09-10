@@ -136,6 +136,18 @@ img { max-width: 100%; display: block; }
   max-width: 66ch;
 }
 
+/* .hero's padding shorthand zeroes out .wrap's 24px side padding on this
+   element; restore it so the header lines up with everything else in .wrap
+   (section labels, and .project-card's outer edge, which has no side margin) */
+.projects-hero {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.projects-hero p.lede {
+  max-width: none;
+}
+
 .hero .cta-row {
   display: flex;
   gap: 12px;

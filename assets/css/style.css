@@ -107,7 +107,8 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: 72px 0 48px;
+  padding-top: 72px;
+  padding-bottom: 48px;
 }
 
 .hero-top {
@@ -139,19 +140,6 @@ img { max-width: 100%; display: block; }
 
 .hero p.lede {
   font-size: 1.08rem;
-  max-width: 66ch;
-}
-
-/* .hero's padding shorthand zeroes out .wrap's 24px side padding on this
-   element; restore it so the header lines up with everything else in .wrap
-   (section labels, and .project-card's outer edge, which has no side margin) */
-.projects-hero {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.projects-hero p.lede {
-  max-width: none;
 }
 
 .hero .cta-row {
@@ -482,7 +470,7 @@ footer a:hover { color: var(--accent-bright); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
-  .hero { padding: 48px 0 32px; }
+  .hero { padding-top: 48px; padding-bottom: 32px; }
   .hero h1 { font-size: 1.7rem; }
   .grid { grid-template-columns: 1fr; }
   .dasher-tile { flex-basis: calc(50% - 6px); }

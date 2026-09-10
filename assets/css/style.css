@@ -336,6 +336,16 @@ h2 {
 .tag-telegram { color: #229ed9; }
 .tag-claude { color: #d97757; }
 
+.tag-gas { color: #4285f4; }
+.tag-gemini { color: #a142f4; }
+.tag-python { color: #4b8bbe; }
+.tag-tkinter { color: #f4b400; }
+.tag-applescript { color: #8e8e93; }
+.tag-esp32 { color: #e7352c; }
+.tag-epics { color: #5c6bc0; }
+.tag-esphome { color: #29abe2; }
+.tag-cpp { color: #00599c; }
+
 /* ---------- Live embeds (projects.html) ---------- */
 .embed-wrap {
   border: 1px solid var(--border);

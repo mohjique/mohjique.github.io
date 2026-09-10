@@ -334,6 +334,7 @@ h2 {
 .tag svg { fill: currentColor; }
 
 .tag-telegram { color: #229ed9; }
+.tag-claude { color: #d97757; }
 
 /* ---------- Live embeds (projects.html) ---------- */
 .embed-wrap {

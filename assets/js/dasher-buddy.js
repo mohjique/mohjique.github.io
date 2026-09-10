@@ -31,8 +31,8 @@
   }
 
   function bounds() {
-    var w = el.offsetWidth || 28;
-    var h = el.offsetHeight || 38;
+    var w = el.offsetWidth || 42;
+    var h = el.offsetHeight || 58;
     return {
       minX: MARGIN,
       maxX: Math.max(MARGIN, window.innerWidth - w - MARGIN),

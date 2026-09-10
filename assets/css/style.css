@@ -337,16 +337,20 @@ h2 {
 
 .embed-caption {
   font-size: 0.8rem;
-  margin: 0 0 18px;
+  margin: 0 0 12px;
 }
 
-.embed-caption a { font-weight: 600; }
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
 
 .telegram-cta {
   background: #229ed9;
   border-color: #229ed9;
   color: #fdfdfa;
-  margin-bottom: 18px;
 }
 
 .telegram-cta svg { fill: currentColor; }

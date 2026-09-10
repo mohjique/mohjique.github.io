@@ -6,8 +6,8 @@
   --border: #e4e1d8;
   --text: #1c1b18;
   --text-muted: #5c5a52;
-  --accent: #1f4d3d;
-  --accent-bright: #2f7a5c;
+  --accent: #2fff00;
+  --accent-bright: #2fff00;
   --accent-soft: #e7efe9;
   --tag-bg: #eeece3;
   --shadow: 0 1px 2px rgba(28, 27, 24, 0.04), 0 8px 24px rgba(28, 27, 24, 0.06);
@@ -24,8 +24,8 @@
     --border: #303228;
     --text: #ece9e0;
     --text-muted: #a7a495;
-    --accent: #8fd6b4;
-    --accent-bright: #b3e6c8;
+    --accent: #2fff00;
+    --accent-bright: #2fff00;
     --accent-soft: #1f2b22;
     --tag-bg: #262820;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
@@ -47,6 +47,8 @@ body {
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--accent-bright); }
+
+h1, h2, h3 { font-family: "Courier New", Courier, monospace; }
 
 img { max-width: 100%; display: block; }
 
@@ -174,7 +176,7 @@ img { max-width: 100%; display: block; }
 .btn.primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fdfdfa;
+  color: #10120e;
 }
 
 .btn.primary:hover { background: var(--accent-bright); border-color: var(--accent-bright); color: #10120e; }

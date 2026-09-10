@@ -175,7 +175,10 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Sections ---------- */
 section { padding: 40px 0; }
-section + section { border-top: 1px solid var(--border); }
+/* section also carries .wrap, whose padding shorthand (higher specificity
+   than the bare "section" type selector) zeroes out top/bottom padding
+   regardless of source order -- match its specificity to actually win */
+section.wrap + section.wrap { padding-top: 64px; border-top: 1px solid var(--border); }
 
 .section-label {
   font-family: "Courier New", Courier, monospace;
